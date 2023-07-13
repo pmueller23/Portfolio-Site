@@ -95,3 +95,8 @@ a.button:focus {
 img {
   width: 100%;
 }
+
+#pm-logo {
+  fill: #ffffff;
+  width: 36px;
+}
