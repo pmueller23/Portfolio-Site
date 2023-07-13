@@ -96,7 +96,34 @@ img {
   width: 100%;
 }
 
+/* SVG's */
+
 #pm-logo {
   fill: #ffffff;
   width: 36px;
+}
+
+#link-arrow {
+  fill: #00ccb5;
+  width: 21px;
+}
+
+#linkedin-link {
+  width: 49px;
+}
+
+#behance-link {
+  width: 49px;
+}
+
+#github-link {
+  width: 54px;
+}
+
+#send-message {
+  width: 27px;
+}
+
+#view-resume {
+  width: 27px;
 }
