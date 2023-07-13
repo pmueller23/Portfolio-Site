@@ -127,3 +127,101 @@ img {
 #view-resume {
   width: 27px;
 }
+
+#discover,
+#define,
+#design,
+#test,
+#revise,
+#deliver {
+  width: 25px;
+}
+
+#research {
+  fill: #000000;
+  width: 61px;
+}
+
+#user-flow {
+  fill: #000000;
+  width: 64px;
+}
+
+#wireframes {
+  fill: #000000;
+  width: 63px;
+}
+
+#user-test {
+  fill: #000000;
+  width: 48px;
+}
+
+#prototypes {
+  fill: #000000;
+  width: 37px;
+}
+
+#mockups {
+  fill: #000000;
+  width: 64px;
+}
+
+#figma {
+  width: 31px;
+}
+
+#xd {
+  width: 42px;
+}
+
+#illustrator {
+  width: 42px;
+}
+
+#photoshop {
+  width: 42px;
+}
+
+#invision {
+  width: 42px;
+}
+
+#usability-hub {
+  fill: #000000;
+  width: 42px;
+}
+
+#github-icon {
+  width: 42px;
+}
+
+#vs-code {
+  fill-rule: evenodd;
+  width: 41px;
+}
+
+#atom {
+  fill: #000000;
+  width: 49px;
+}
+
+#javascript {
+  width: 43px;
+}
+
+#html {
+  width: 35px;
+}
+
+#css {
+  width: 40px;
+}
+
+#slack {
+  width: 42px;
+}
+
+#keynote {
+  width: 40px;
+}
