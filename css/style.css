@@ -88,6 +88,29 @@ footer {
   padding: 35px 9% 12px 9%;
 }
 
+.steps,
+.skill-row,
+.tool-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.tool-row {
+  justify-content: space-evenly;
+}
+
+.process,
+.skill,
+.tool {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 main > h1 {
   margin: 0px;
 }
@@ -105,6 +128,10 @@ h2 {
   line-height: 1em;
   margin: 0px;
   padding: 0px;
+}
+
+section.gradient-bg h2 {
+  margin-top: 50px;
 }
 
 footer h2 {
@@ -131,6 +158,27 @@ footer p {
 p.copyright {
   font-size: 14px;
   margin: 32px 0px 0px 0px;
+}
+
+p.process-label {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1em;
+  text-align: center;
+}
+
+p.skills-label {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1em;
+  text-align: center;
+}
+
+p.tools-label {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1em;
+  text-align: center;
 }
 
 h3 + p {
