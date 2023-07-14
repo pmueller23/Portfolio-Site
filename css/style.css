@@ -63,6 +63,10 @@ li.current {
   border-bottom: 4px solid #00ccb5;
 }
 
+#atf {
+  text-align: center;
+}
+
 main {
   display: flex;
   flex-flow: column nowrap;
@@ -131,6 +135,10 @@ h2 {
 }
 
 section.gradient-bg h2 {
+  margin-top: 50px;
+}
+
+.adjust {
   margin-top: 50px;
 }
 
@@ -217,6 +225,18 @@ button.more-info {
   line-height: 1em;
 }
 
+button.prototype {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 1em;
+  margin-top: 20px;
+}
+
 a.readmore {
   font-size: 1em;
   font-weight: 700;
@@ -260,6 +280,18 @@ a.contact button:focus {
   align-items: center;
 }
 
+.detail-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.detail-header h2 {
+  margin-left: 10px;
+}
+
 img {
   width: 100%;
 }
@@ -272,6 +304,16 @@ img.divider {
 img.project-img {
   margin-top: 35px;
   margin-bottom: 20px;
+}
+
+img.project-header {
+  margin-top: 45px;
+  margin-bottom: 25px;
+  width: 75%;
+}
+
+img.overview {
+  margin-bottom: 25px;
 }
 /* SVG's */
 
