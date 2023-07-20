@@ -47,7 +47,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 12px;
+  margin-right: 20px;
   padding-bottom: 2px;
   display: flex;
   border-bottom: 2px solid transparent;
@@ -66,15 +66,14 @@ li.current {
   border-bottom: 2px solid #00ccb5;
 }
 
-.atf {
-  text-align: center;
-  padding-top: 66px;
-}
-
 main {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: center;
+  padding-top: 66px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 main.prj-pg {
@@ -145,8 +144,8 @@ section.gradient-bg {
   align-items: center;
   text-align: center;
   font-size: 14px;
-  line-height: 1.2em;
-  padding: 10%;
+  line-height: 14px;
+  padding: 15px;
 }
 
 .left-col .cell {
@@ -161,6 +160,11 @@ section.gradient-bg {
   font-weight: 600;
 }
 
+li.research {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
 footer {
   display: flex;
   flex-flow: column nowrap;
@@ -172,7 +176,7 @@ footer {
 .steps {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-top: 25px;
 }
@@ -318,12 +322,6 @@ p.tools-label {
   text-align: center;
 }
 
-p.project-detail {
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-}
-
 h3 + p {
   margin-top: 15px;
 }
@@ -374,7 +372,7 @@ button.prototype {
 }
 
 a.readmore {
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 700;
   color: #000000;
   text-decoration: none;
@@ -389,8 +387,8 @@ a.contact button {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  height: 50px;
   width: 260px;
+  height: 50px;
   border-style: solid;
   border-width: 2px;
   border-radius: 10px;
@@ -416,12 +414,26 @@ a.contact button:focus {
   align-items: center;
 }
 
-.detail-header {
+.prj-details {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+}
+
+.detail {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.detail p {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  text-align: center;
 }
 
 img {
@@ -448,7 +460,7 @@ img.overview {
 }
 
 .process img {
-  width: 25px;
+  width: 30px;
   height: auto;
 }
 
@@ -470,12 +482,13 @@ img.overview {
 
 #pm-logo {
   fill: #ffffff;
-  width: 36px;
+  width: 40px;
 }
 
 #link-arrow {
   fill: #00ccb5;
-  width: 21px;
+  width: 25px;
+  height: auto;
   margin-left: 5px;
 }
 
@@ -501,104 +514,6 @@ img.overview {
   margin-right: 10px;
 }
 
-#discover,
-#define,
-#design,
-#test,
-#revise,
-#deliver {
-  width: 25px;
-}
-
-#research {
-  fill: #000000;
-  width: 61px;
-}
-
-#user-flow {
-  fill: #000000;
-  width: 64px;
-}
-
-#wireframes {
-  fill: #000000;
-  width: 63px;
-}
-
-#user-test {
-  fill: #000000;
-  width: 48px;
-}
-
-#prototypes {
-  fill: #000000;
-  width: 37px;
-}
-
-#mockups {
-  fill: #000000;
-  width: 64px;
-}
-
-#figma {
-  width: 31px;
-}
-
-#xd {
-  width: 42px;
-}
-
-#illustrator {
-  width: 42px;
-}
-
-#photoshop {
-  width: 42px;
-}
-
-#invision {
-  width: 42px;
-}
-
-#usability-hub {
-  fill: #000000;
-  width: 42px;
-}
-
-#github-icon {
-  width: 42px;
-}
-
-#vs-code {
-  fill-rule: evenodd;
-  width: 41px;
-}
-
-#atom {
-  fill: #000000;
-  width: 49px;
-}
-
-#javascript {
-  width: 43px;
-}
-
-#html {
-  width: 35px;
-}
-
-#css {
-  width: 40px;
-}
-
-#slack {
-  width: 42px;
-}
-
-#keynote {
-  width: 40px;
-}
-
 #project-type {
   width: 39px;
 }
@@ -613,4 +528,463 @@ img.overview {
 
 #duration {
   width: 35px;
+}
+
+@media only screen and (min-width: 450px) {
+  header {
+    height: 100px;
+  }
+
+  main {
+    padding-top: 100px;
+  }
+
+  main.prj-pg {
+    padding-top: 166px;
+  }
+
+  #navbar {
+    height: 68px;
+  }
+
+  #pm-logo {
+    width: 60px;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid transparent;
+  }
+
+  li.current {
+    border-bottom-width: 3px;
+  }
+
+  nav ul li a {
+    font-size: 22px;
+  }
+
+  .prj-details {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .detail {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+  }
+
+  .detail p {
+    font-size: 18px;
+    line-height: 14px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  p.copyright {
+    font-size: 16px;
+  }
+
+  a.readmore {
+    font-size: 18px;
+  }
+
+  .cell {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  li.research {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  #link-arrow {
+    width: 30px;
+  }
+
+  a.contact button {
+    font-size: 18px;
+    width: 325px;
+    height: 60px;
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  #send-message {
+    width: 37px;
+  }
+
+  #view-resume {
+    width: 37px;
+  }
+
+  .process img {
+    width: 40px;
+    height: auto;
+  }
+
+  p.process-label {
+    font-size: 10px;
+  }
+
+  .skill img {
+    height: 75px;
+    width: auto;
+  }
+
+  p.skills-label {
+    font-size: 16px;
+  }
+
+  .tool img {
+    height: 50px;
+    width: auto;
+  }
+
+  p.tools-label {
+    font-size: 15px;
+  }
+
+  #social-links {
+    width: 250px;
+  }
+
+  #linkedin-link {
+    width: 55px;
+  }
+
+  #behance-link {
+    width: 55px;
+  }
+
+  #github-link {
+    width: 60px;
+  }
+}
+
+@media only screen and (min-width: 656px) {
+  .col-md-6 {
+    width: 50%;
+    float: right;
+    margin-bottom: 25px;
+  }
+
+  img.project-img {
+    margin-top: 35px;
+    margin-left: 15px;
+  }
+
+  picture::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  header {
+    height: 125px;
+  }
+
+  main {
+    padding-top: 125px;
+    width: 72%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+  }
+
+  main.prj-pg {
+    padding-top: 191px;
+    width: 72%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+  }
+
+  #navbar {
+    height: 85px;
+    width: 72%;
+  }
+
+  #pm-logo {
+    width: 80px;
+  }
+
+  nav ul li {
+    margin-right: 28px;
+    padding-bottom: 6px;
+    border-bottom: 4px solid transparent;
+  }
+
+  li.current {
+    border-bottom-width: 4px;
+  }
+
+  nav ul li a {
+    font-size: 24px;
+  }
+
+  .proj-overview {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .summary {
+    margin-left: 20px;
+  }
+
+  .proj-title {
+    font-size: 24px;
+  }
+
+  .brief {
+    font-size: 16px;
+  }
+
+  img.overview {
+    margin: 0;
+    min-width: 180px;
+  }
+
+  .prj-details {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    clear: both;
+  }
+
+  .detail {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    max-width: 20%;
+  }
+
+  .detail p {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .cntBtns {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a.contact button {
+    font-size: 16px;
+    width: 182px;
+    height: 35px;
+    padding: 15px;
+    margin: 20px 10px;
+  }
+
+  #send-message {
+    width: 22px;
+  }
+
+  #view-resume {
+    width: 22px;
+  }
+
+  #project-type {
+    width: 50%;
+  }
+
+  #tools-used {
+    width: 65%;
+  }
+
+  #role {
+    width: 50%;
+  }
+
+  #duration {
+    width: 50%;
+  }
+
+  h3,
+  h4,
+  ul {
+    clear: both;
+  }
+
+  ul {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+    float: right;
+    margin-bottom: 50px;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+    float: right;
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  header {
+    height: 150px;
+  }
+
+  main {
+    padding-top: 150px;
+    width: 72%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+  }
+
+  main.prj-pg {
+    padding-top: 216px;
+    width: 72%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+  }
+
+  #navbar {
+    height: 102px;
+    width: 70%;
+  }
+
+  #pm-logo {
+    width: 100px;
+  }
+
+  nav ul li {
+    margin-right: 35px;
+    padding-bottom: 8px;
+    border-bottom: 5px solid transparent;
+  }
+
+  li.current {
+    border-bottom-width: 5px;
+  }
+
+  nav ul li a {
+    font-size: 32px;
+  }
+
+  .proj-overview {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .summary {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  .proj-title {
+    font-size: 37px;
+  }
+
+  .brief {
+    margin-top: 20px;
+  }
+
+  img.overview {
+    margin: 0;
+    min-width: 180px;
+  }
+
+  .prj-details {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    clear: both;
+  }
+
+  .detail {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    max-width: 20%;
+  }
+
+  .detail p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  a.contact button {
+    font-size: 22px;
+    width: 272px;
+    height: 50px;
+    padding: 15px;
+    margin: 20px 10px;
+  }
+
+  #send-message {
+    width: 36px;
+  }
+
+  #view-resume {
+    width: 36px;
+  }
+
+  #project-type {
+    width: 50%;
+  }
+
+  #tools-used {
+    width: 65%;
+  }
+
+  #role {
+    width: 50%;
+  }
+
+  #duration {
+    width: 50%;
+  }
+
+  h3,
+  h4,
+  ul {
+    clear: both;
+  }
+
+  ul {
+    margin-right: 20px;
+  }
 }
