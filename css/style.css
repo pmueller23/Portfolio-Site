@@ -272,14 +272,14 @@ footer {
 }
 
 /* Headers */
-h1 {
+h2 {
   margin: 0px;
   font-size: 28px;
   font-weight: 800;
   line-height: 28px;
 }
 
-h2 {
+h3 {
   font-size: 24px;
   font-weight: 700;
   margin: 20px 0px 0px 0px;
@@ -289,24 +289,24 @@ h2 {
   margin-top: 35px;
 }
 
-.process-h2 h2 {
+.process-h2 h3 {
   margin: 0px 0px 0px 5px;
   font-size: 22px;
 }
 
-h3 {
+h4 {
   font-size: 20px;
   font-weight: 700;
   margin: 30px 0px 0px 0px;
 }
 
-h4 {
+h5 {
   font-size: 18px;
   font-weight: 500;
   margin: 20px 0px 10px 0px;
 }
 
-h5 {
+h6 {
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
@@ -318,7 +318,7 @@ h5 {
   margin-top: 35px;
 }
 
-footer h2 {
+footer h3 {
   margin-top: 30px;
 }
 
@@ -388,7 +388,7 @@ a:active {
   color: #00ccb5;
 }
 
-button.more-info {
+.more-info {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -400,7 +400,7 @@ button.more-info {
   line-height: 19px;
 }
 
-button.prototype {
+.prototype {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -416,10 +416,10 @@ a.readmore {
   font-size: 16px;
   font-weight: 700;
   color: #000000;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-a.contact button {
+a.footer-btn {
   font-size: 16px;
   font-weight: 600;
   color: #000000;
@@ -435,16 +435,16 @@ a.contact button {
   border-radius: 10px;
   border-color: #00ccb5;
   padding: 15px;
-  margin-top: 20px;
+  margin: 20px;
   transition-duration: 0.3s;
   transition-property: background-color;
 }
 
-a.contact button:hover {
+a.footer-btn:hover {
   background-color: #00ccb5;
 }
 
-a.contact button:focus {
+a.footer-btn:focus {
   background-color: #efefef;
 }
 
@@ -536,7 +536,7 @@ img.overview {
   width: 40px;
 }
 
-#link-arrow {
+.link-arrow {
   fill: #00ccb5;
   width: 25px;
   height: auto;
@@ -675,7 +675,7 @@ img.overview {
     width: 30px;
   }
 
-  a.contact button {
+  a.footer-btn {
     font-size: 18px;
     width: 325px;
     height: 60px;
@@ -872,7 +872,7 @@ img.overview {
     align-items: center;
   }
 
-  a.contact button {
+  a.footer-btn {
     font-size: 16px;
     width: 182px;
     height: 35px;
@@ -1017,7 +1017,7 @@ img.overview {
     text-align: center;
   }
 
-  a.contact button {
+  a.footer-btn {
     font-size: 22px;
     width: 272px;
     height: 50px;
