@@ -792,7 +792,7 @@ img.overview {
     border-bottom: 4px solid transparent;
   }
 
-  #underline {
+  .current {
     padding-bottom: 6px;
     border-bottom: 4px solid #00ccb5;
   }

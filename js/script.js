@@ -21,3 +21,8 @@ $("a").click(function (e) {
     1000
   );
 });
+
+$("#menu li a").on("click", function () {
+  $("#menu li a.current").removeClass("current");
+  $(this).addClass("current");
+});
